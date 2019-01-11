@@ -37,12 +37,12 @@ if (file_exists(__DIR__.'/config.php')) {
  *
  * Source on Github http://github.com/Seldaek/php-console
  */
-if (!in_array('*', $options['ip_whitelist'], true) &&
-    !in_array($_SERVER['REMOTE_ADDR'], $options['ip_whitelist'], true)
-) {
-    header('HTTP/1.1 401 Access unauthorized');
-    die('ERR/401 Go Away');
-}
+//if (!in_array('*', $options['ip_whitelist'], true) &&
+//    !in_array($_SERVER['REMOTE_ADDR'], $options['ip_whitelist'], true)
+//) {
+//    header('HTTP/1.1 401 Access unauthorized');
+//    die('ERR/401 Go Away');
+//}
 
 if (!file_exists('vendor/autoload.php')) {
     die('Missing vendor/autoload.php file. Did you forget to run "composer install" ?');
